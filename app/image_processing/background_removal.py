@@ -3,7 +3,7 @@ from rembg import remove, new_session
 from PIL import Image
 from io import BytesIO
 
-session = new_session("u2net")
+session = new_session("u2netp")
 
 def remove_background(image: Image.Image) -> Image.Image:
     try:
