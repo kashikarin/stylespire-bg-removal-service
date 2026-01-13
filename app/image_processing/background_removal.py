@@ -17,7 +17,7 @@ def remove_background(image: Image.Image) -> Image.Image:
 
             return Image.open(BytesIO(output_bytes)).convert("RGBA")
         
-        return remove(image)
+        return remove(image, session=session)
     except Exception as e:
         raise RuntimeError(f"Background removal failed: {e}")
 
